@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        .page {
+            width: 600px;
+            margin: auto;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .page .header {
+            border-bottom: 1px solid #f1f1f1;
+            padding-bottom: 20px;
+        }
+        .page .header img {
+            width:64px;
+            height:64px;
+        }
+        .setting-form {
+            width: 400px;
+            margin: 60px auto;
+        }
+        .setting-form p {
+            color:#999;
+            font-size:10px;
+        }
+        .setting-form input {
+            width:100%;
+            height: 32px;
+            margin:0;
+        }
+        .setting-form .submit-btn {
+            margin: 40px auto;
+            width: 80px;
+            background: #ddd;
+            color:#333;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            font-weight:bold;
+            border-radius: 6px;
+        }
+        .breif {
+            text-align:left;
+        }
+        .breif .operation {
+            color:red;
+        }
+        .breif .title {
+            font-size: 20px;
+            font-weight: bold;
+        } 
+        .breif .screenshot {
+            width: 600px;
+            margin-top: 20px;
+        }
+      </style>
+    </head>
+    <body>
+        <div class="page">
+            <div class="header"><img src="images/jira_128.png" /><p>JIRA Helper 1.0</p></div>
+            <div class="setting-form">
+                <p>Set the base url of your JIRA: e.g., https://jira.atlassian.com</p>
+                <input id="base-url-input" type="text"/>
+                <div id="save-button" class="submit-btn">Save</div>
+            </div>
+            <div class="breif">
+                <p class="title">HowTos</p>
+                <ul class="list">
+                    <li>Create new jira ticket: Click the toolbar icon.</li>
+                    <li>Open Jira home: Type <span class="operation">jira</span>, then <span class="operation">tab</span>, <span class="operation">return</span></li>
+                    <li>Open a specified jira ticket: Type <span class="operation">jira</span>, then <span class="operation">tab</span>, type in an issue key (e.g.,AB-1024), <span class="operation">return</span></li>
+                </ul>
+                <img class="screenshot" src="images/screenshot.png"/>
+            </div>
+        </div>
+        <script src="options.js"></script>
+    </body>
+</html>
